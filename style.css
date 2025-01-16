@@ -15,8 +15,9 @@ h2 {
     color: #0077cc;
 }
 .name {
-    font-size: 40px; /* You can adjust this value as needed */
-    font-weight: bold; /* Optional: keeps the bold effect */
+    font-size: 50px; /* Increased font size for Abdul Haseeb Soomro */
+    font-weight: bold;
+    color: #000000; /* Optional: you can choose to keep the color black */
 }
 /* Header Section */
 header {
