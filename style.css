@@ -14,11 +14,13 @@ h1 {
 h2 {
     color: #0077cc;
 }
+
 .name {
     font-size: 50px; /* Increased font size for Abdul Haseeb Soomro */
     font-weight: bold;
     color: #000000; /* Optional: you can choose to keep the color black */
 }
+
 /* Header Section */
 header {
     background-color: #808080;
@@ -30,6 +32,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
 }
 
 .profile-img {
@@ -53,6 +56,7 @@ header {
 .about-me p {
     line-height: 1.6;
 }
+
 /* Research Section */
 .research {
     background-color: #ffffff;
@@ -117,4 +121,48 @@ header {
 
 .projects h2 {
     margin-top: 10px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    /* Profile Section */
+    .profile {
+        flex-direction: column; /* Stack the image and text vertically */
+        align-items: center;
+        padding: 10px;
+    }
+
+    .profile-img {
+        width: 150px;
+        height: 150px; /* Reduce image size on small screens */
+    }
+
+    /* Contact Info */
+    .contact-info {
+        text-align: center;
+        max-width: 100%; /* Ensure the contact info fits the screen */
+    }
+
+    /* Section padding adjustments */
+    .about-me, .research, .work-experience, .education, .skills, .projects {
+        padding: 15px;
+        margin: 10px 0;
+    }
+
+    .work-experience ul {
+        padding-left: 15px;
+    }
+
+    .skills ul {
+        padding-left: 15px;
+    }
+
+    /* Header */
+    header {
+        padding: 30px 10px;
+    }
+
+    .name {
+        font-size: 36px;
+    }
 }
