@@ -19,8 +19,8 @@ body {
     position: fixed;
     top: 20px;
     right: 20px;
-    width: 100px; /* Adjusted smaller size */
-    height: 100px; /* Adjusted smaller size */
+    width: 40px; /* Adjusted smaller size */
+    height: 40px; /* Adjusted smaller size */
     border-radius: 50%;
     border: 3px solid #ccc;
 }
