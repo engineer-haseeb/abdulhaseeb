@@ -7,12 +7,8 @@ body {
     color: #333;
 }
 
-h1 {
+h1, h2 {
     color: #0044cc;
-}
-
-h2 {
-    color: #0077cc;
 }
 
 .name {
@@ -25,58 +21,45 @@ h2 {
 header {
     background-color: #808080;
     color: white;
-    padding: 50px;
+    padding: 20px;
 }
 
 .profile {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    flex-wrap: wrap; /* Ensure flexibility on smaller screens */
 }
 
 .profile-img {
-    width: 250px;
-    height: 250px;
+    width: 150px;
+    height: 150px;
     border-radius: 100%;
+    margin-bottom: 10px;
 }
 
 .contact-info {
     max-width: 400px;
+    margin-left: 20px;
 }
 
-/* About Me Section */
-.about-me {
-    background-color: #ffffff;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 8px;
-}
-
-.about-me p {
-    line-height: 1.6;
-}
-
-/* Research Section */
-.research {
-    background-color: #ffffff;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 8px;
-}
-
-.research p {
+.contact-info p {
     margin-bottom: 10px;
 }
 
-/* Work Experience Section */
-.work-experience {
+/* About Me Section */
+.about-me, .research, .work-experience, .education, .skills, .projects {
     background-color: #ffffff;
     padding: 20px;
     margin: 20px;
     border-radius: 8px;
 }
 
+.about-me p, .research p, .work-experience ul, .skills ul {
+    line-height: 1.6;
+}
+
+/* Work Experience Section */
 .work-experience h2 {
     margin-top: 10px;
 }
@@ -86,83 +69,61 @@ header {
     padding-left: 20px;
 }
 
-/* Education Section */
-.education {
-    background-color: #ffffff;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 8px;
-}
-
-.education p {
-    margin-bottom: 10px;
-}
-
-/* Skills Section */
-.skills {
-    background-color: #ffffff;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 8px;
-}
-
 .skills ul {
     list-style-type: square;
     padding-left: 20px;
 }
 
-/* Projects Section */
-.projects {
-    background-color: #ffffff;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 8px;
-}
-
-.projects h2 {
-    margin-top: 10px;
-}
-
-/* Mobile responsiveness */
+/* Media Queries for Mobile Responsiveness */
 @media (max-width: 768px) {
-    /* Profile Section */
+    /* Header: Stack the profile image and contact info vertically on smaller screens */
     .profile {
-        flex-direction: column; /* Stack the image and text vertically */
-        align-items: center;
-        padding: 10px;
+        flex-direction: column;
+        text-align: center;
     }
 
     .profile-img {
-        width: 150px;
-        height: 150px; /* Reduce image size on small screens */
+        width: 200px;
+        height: 200px;
+        margin-bottom: 10px;
     }
 
-    /* Contact Info */
     .contact-info {
-        text-align: center;
-        max-width: 100%; /* Ensure the contact info fits the screen */
+        max-width: 100%;
+        margin-left: 0;
     }
 
-    /* Section padding adjustments */
+    /* Increase font size of names on small screens */
+    .name {
+        font-size: 35px;
+    }
+
+    /* Adjust section margins and padding */
     .about-me, .research, .work-experience, .education, .skills, .projects {
+        margin: 10px;
         padding: 15px;
-        margin: 10px 0;
     }
 
-    .work-experience ul {
-        padding-left: 15px;
+    h1 {
+        font-size: 28px;
     }
 
-    .skills ul {
-        padding-left: 15px;
+    h2 {
+        font-size: 22px;
+    }
+}
+
+/* For even smaller devices (e.g., phones in portrait) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 24px;
     }
 
-    /* Header */
-    header {
-        padding: 30px 10px;
+    h2 {
+        font-size: 20px;
     }
 
     .name {
-        font-size: 36px;
+        font-size: 30px;
     }
 }
