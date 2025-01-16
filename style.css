@@ -49,6 +49,17 @@ header {
 .about-me p {
     line-height: 1.6;
 }
+/* Research Section */
+.research {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+.research p {
+    margin-bottom: 10px;
+}
 
 /* Work Experience Section */
 .work-experience {
