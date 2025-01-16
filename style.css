@@ -14,7 +14,10 @@ h1 {
 h2 {
     color: #0077cc;
 }
-
+.name {
+    font-size: 40px; /* You can adjust this value as needed */
+    font-weight: bold; /* Optional: keeps the bold effect */
+}
 /* Header Section */
 header {
     background-color: #808080;
