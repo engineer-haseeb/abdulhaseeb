@@ -19,11 +19,11 @@ body {
     position: fixed;
     top: 20px;
     right: 20px;
-    width: 80px; /* Adjusted smaller size */
-    height: 80px; /* Adjusted smaller size */
+    width: 80px; /* Adjust to your preferred size */
+    height: 80px; /* Adjust to your preferred size */
     border-radius: 50%;
     border: 3px solid #ccc;
-    /*z-index: 50; /* Ensures image is not behind other content */
+    z-index: 10;
 }
 
 /* Header */
