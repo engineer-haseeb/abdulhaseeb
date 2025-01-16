@@ -1,9 +1,9 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Times New Roman, Serif;
     margin: 0;
     padding: 0;
-    background-color: #ffe933;
+    background-color: #f4e39d;
     color: #333;
 }
 
@@ -17,7 +17,7 @@ h2 {
 
 /* Header Section */
 header {
-    background-color: #0044cc;
+    background-color: #000000;
     color: white;
     padding: 20px;
 }
@@ -29,13 +29,13 @@ header {
 }
 
 .profile-img {
-    width: 150px;
-    height: 150px;
-    border-radius: 70%;
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
 }
 
 .contact-info {
-    max-width: 600px;
+    max-width: 400px;
 }
 
 /* About Me Section */
