@@ -126,4 +126,37 @@ header {
     .name {
         font-size: 30px;
     }
+
+    /* Adjust link alignment in the Research section for mobile */
+    .research p {
+        text-align: center; /* Centers the paragraph text */
+    }
+
+    .research a {
+        display: inline-block; /* Prevents the link from overflowing */
+        text-align: center;
+        word-wrap: break-word; /* Ensures that long URLs break appropriately */
+        margin-top: 10px;
+    }
+
+    /* Further styling adjustments for Research and other sections */
+    .research h1 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .research p {
+        font-size: 16px;
+        line-height: 1.6;
+        text-align: justify;
+    }
+
+    .research a {
+        color: #0044cc; /* Link color */
+        text-decoration: none;
+    }
+
+    .research a:hover {
+        text-decoration: underline; /* Underline effect when hovered */
+    }
 }
