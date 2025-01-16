@@ -1,82 +1,105 @@
-/* General Reset */
-* {
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-/* Body Styling */
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
+h1 {
+    color: #0044cc;
+}
+
+h2 {
+    color: #0077cc;
+}
+
+/* Header Section */
+header {
+    background-color: #0044cc;
+    color: white;
     padding: 20px;
+}
+
+.profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.contact-info {
+    max-width: 600px;
+}
+
+/* About Me Section */
+.about-me {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+.about-me p {
     line-height: 1.6;
 }
 
-/* Profile Image Styling */
-.profile-img {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    width: 80px; /* Adjust to your preferred size */
-    height: 80px; /* Adjust to your preferred size */
-    border-radius: 50%;
-    border: 3px solid #ccc;
-    z-index: 10;
-}
-
-/* Header */
-header {
-    position: relative;
-    margin-bottom: 20px;
-}
-
-/* Section Styling */
-section {
-    margin-bottom: 20px;
+/* Work Experience Section */
+.work-experience {
+    background-color: #ffffff;
     padding: 20px;
-    background-color: white;
+    margin: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-h1, h2 {
-    color: #333;
+.work-experience h2 {
+    margin-top: 10px;
+}
+
+.work-experience ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+/* Education Section */
+.education {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+.education p {
     margin-bottom: 10px;
 }
 
-/* Styling for Intro Section */
-.intro {
-    background-color: #e1f7d5;
-    text-align: center;
+/* Skills Section */
+.skills {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 20px;
     border-radius: 8px;
 }
 
-/* Styling for Experience Section */
-.experience ul {
-    list-style-type: none;
+.skills ul {
+    list-style-type: square;
+    padding-left: 20px;
 }
 
-.experience li {
-    margin: 10px 0;
+/* Projects Section */
+.projects {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
 }
 
-/* Styling for Skills and Education */
-.skills ul, .education p {
-    margin-left: 20px;
-}
-
-/* Styling for Projects Section */
-.projects ul {
-    list-style-type: none;
-}
-
-.projects li a {
-    color: #007BFF;
-    text-decoration: none;
-}
-
-.projects li a:hover {
-    text-decoration: underline;
+.projects h2 {
+    margin-top: 10px;
 }
