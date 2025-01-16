@@ -1,36 +1,81 @@
-/* Basic styling for the body */
-body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #f4f4f4;
+/* General Reset */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-h1 {
-    color: #007acc;
-    margin-top: 20px;
-}
-
-p {
-    color: #555;
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 20px;
     line-height: 1.6;
 }
 
-a {
-    color: #007acc;
+/* Profile Image Styling */
+.profile-img {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #ccc;
+}
+
+/* Header */
+header {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+/* Section Styling */
+section {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Styling for Intro Section */
+.intro {
+    background-color: #e1f7d5;
+    text-align: center;
+    border-radius: 8px;
+}
+
+/* Styling for Experience Section */
+.experience ul {
+    list-style-type: none;
+}
+
+.experience li {
+    margin: 10px 0;
+}
+
+/* Styling for Skills and Education */
+.skills ul, .education p {
+    margin-left: 20px;
+}
+
+/* Styling for Projects Section */
+.projects ul {
+    list-style-type: none;
+}
+
+.projects li a {
+    color: #007BFF;
     text-decoration: none;
 }
 
-a:hover {
+.projects li a:hover {
     text-decoration: underline;
-}
-
-section {
-    margin: 20px auto;
-    padding: 10px;
-    max-width: 800px;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
